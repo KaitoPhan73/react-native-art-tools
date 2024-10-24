@@ -16,7 +16,7 @@ const BrandsList = () => {
     new Set(getTools.data?.map((item: toolResponse) => item.brand) || [])
   );
   brands.unshift("All");
-
+  console.log("helo");
   const { brand: selectedBrand, artName } = useLocalSearchParams();
   const artNameQuery = Array.isArray(artName) ? artName[0] : artName;
 
